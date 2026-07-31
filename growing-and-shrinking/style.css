@@ -1,0 +1,16 @@
+.flex-container{
+  display: flex;
+  border: 2px solid black;
+}
+
+/* add flex grow : 1, flex shrink : 1, flex basis : 0 to all nested div in .flex-container class */
+.flex-container div{
+  border: 2px solid lightcoral;
+  margin: 10px;
+  flex: 1 1 0;
+}
+
+/* add flex grow : 1, flex shrink : 1, flex basis : 200px to first of type of div in .flex-container class */
+.flex-container div:first-of-type{
+  flex: 1 1 200px;
+}
